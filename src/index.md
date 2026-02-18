@@ -60,9 +60,9 @@ The sub-extensions all automatically include the core `pxt-rib-bit` extension as
 
 - [pxt-rib-bit - The Basics](https://github.com/JohnVidler/pxt-rib-bit.git)
 - [pxt-rib-bit-gps - GPS Location Functions](https://github.com/JohnVidler/pxt-rib-bit-gps.git)
-- [pxt-rib-bit-datalogger - Datalogger functions for the micro SD card](https://github.com/JohnVidler/pxt-rib-bit-gps.git)
-- [pxt-rib-bit-lora - Long-Range (LoRa) radio support](https://github.com/JohnVidler/pxt-rib-bit-gps.git)
-- [pxt-rib-bit-mikrobus - MikroBUS port functions](https://github.com/JohnVidler/pxt-rib-bit-gps.git)
+- [pxt-rib-bit-datalogger - Datalogger functions for the micro SD card](https://github.com/JohnVidler/pxt-rib-bit-datalogger.git)
+- [pxt-rib-bit-lora - Long-Range (LoRa) radio support](https://github.com/JohnVidler/pxt-rib-bit-lora.git)
+- [pxt-rib-bit-mikrobus - MikroBUS port functions](https://github.com/JohnVidler/pxt-rib-bit-mikrobus.git)
 
 # Advanced Topics
 
@@ -71,7 +71,7 @@ Most users will not need to update the on-board firmware of the rib:bit, but the
 
 To flash the firmware you will need a AVR ISP compatible programmer, and a standard 6-way ISP IDC cable. This can be achieved by using an Arduino as an ISP programmer, but doing so it beyond the scope of this document. If you wish to flash the firmware this way, please consult the link below for the latest up-to-date sources and information.
 
-[rib-bit-firmware - The Rib:bit firmware source code](https://github.com/JohnVidler/pxt-rib-bit-gps.git)
+[rib-bit-firmware - The Rib:bit firmware source code](https://github.com/JohnVidler/rib-bit-firmware.git)
 
 ## Top / Camera Port
 This port is not yet completely supported by the rib:bit and has not been extensively tested.
@@ -79,4 +79,4 @@ It exposes an SPI and i2c connection along with 3v3 power to boards with connect
 
 Once these functions have been finalised the documentation here will also be updated, but if you wish to experiemnt (at your own peril!) please see the repository below for instructions and updates.
 
-[pxt-rib-bit-camera - Camera port functions (advanced!)](https://github.com/JohnVidler/pxt-rib-bit-gps.git)
+[pxt-rib-bit-camera - Camera port functions (advanced!)](https://github.com/JohnVidler/pxt-rib-bit-camera.git)
