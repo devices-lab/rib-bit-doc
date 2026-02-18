@@ -1,0 +1,16 @@
+{% macro note(title) %}
+<div class="note">
+    <h3>Note: {{ title }}</h3>
+    <p>This would have some kind of important information for the reader to take note of.</p>
+    <p>Multiline stuff should render OK as well</p>
+</div>
+{% endmacro %}
+
+{% macro warning(title) %}
+<div class="warning">
+    <h3>Warning: {{ title }}</h3>
+    <p>This would have some kind of important information for the reader to take note of.</p>
+    <p>Multiline stuff should render OK as well</p>
+</div>
+{% endmacro %}
+

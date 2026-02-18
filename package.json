@@ -1,0 +1,35 @@
+{
+  "name": "@devices-lab/rib-bit-doc",
+  "version": "1.0.0",
+  "description": "The documentation website for the Rib:bit research platform hardware and makecode extensions",
+  "main": "index.js",
+  "repository": "https://github.com/devices-lab/rib-bit-doc.git",
+  "author": "Dr John Vidler <j.vidler@lancaster.ac.uk>",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "@devices-lab/user-doc-base": "https://github.com/devices-lab/user-doc-base.git#main"
+  },
+  "scripts": {
+    "dev:11ty": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy"
+  },
+  "extra": {
+    "title": "Rib:bit Documentation",
+    "keywords": [
+      "rib-bit",
+      "micro:bit",
+      "documentation",
+      "psychology",
+      "tools",
+      "hardware",
+      "research",
+      "education"
+    ],
+    "hwidx": [
+      "hwidx.org/2/1/1.0"
+    ]
+  }
+}
