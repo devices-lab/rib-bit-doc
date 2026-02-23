@@ -7,35 +7,16 @@
     <link rel="stylesheet" href="css/devices-lab/theme.css" />
     <link rel="stylesheet" href="css/devices-lab/root.css" />
     <link rel="stylesheet" href="css/devices-lab/prismjs/prism-vs.css" />
-    <title>{{ title | default("Missing Title") }}</title>
+    <title>{{ title | default(site.name) }}</title>
 </head>
 <body>
-    {% include './fragments/header.njk' %}
+    {%- include './fragments/header.njk' -%}
     <div class="page">
-        <div class="sidebar">
-            <div class="nav-wrapper">
-                <p>
-                    {%- if( image ) -%}
-                    <img src="{{ image }}" alt="{{ title | default('Image') }}" />
-                    {%- endif -%}
-                    {%- if( description ) -%}
-                        {{ description }}
-                    {%- endif -%}
-                </p>
-                <h3>{{ title | default("Missing Title") }}</h3>
-                <hr />
-                {{ content | toc | safe }}
-                <hr />
-                <ul>
-                    {% for name, item in collections.allç√ç %}
-                        <li>{{ name | dump }}: {{ item | dump }}</li>
-                    {% endfor %}
-                </ul>
-            </div>
-        </div>
+        {%- include './fragments/navigation.njk' -%}
         <div class="content">
             {{ content | safe }}
         </div>
+        {%- include './fragments/information.njk' -%}
     </div>
 </body>
 </html>

@@ -76,6 +76,7 @@ a {
 .page {
 	padding: 0.5rem;
 	@apply flex;
+	@apply flex-col;
 	@apply gap-2;
 	@apply justify-center;
 }
@@ -87,6 +88,8 @@ a {
 	padding-bottom: 1.5rem;
 	padding-top: 0.5rem;
 	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .content > .note {
@@ -182,11 +185,7 @@ a {
 	margin-bottom: 0.75rem;
 }
 
-.page > .sidebar {
-	display: none;
-}
-
-.nav-wrapper {
+.block-wrapper {
 	top: 1cap;
 	margin: 0;
 	padding: 1rem;
@@ -195,6 +194,20 @@ a {
 	border-radius: var(--box-corner-radius);
 	background-color: var(--sidebar-bg-color);
 	@apply drop-shadow-md;
+}
+
+.info-wrapper {
+	text-align: center;
+}
+
+.info-wrapper p {
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.nav-wrapper p {
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
 }
 
 .nav-wrapper h3 {
@@ -220,12 +233,14 @@ a {
 	border-radius: 25%;
 	margin-left: auto;
 	margin-right: auto;
-	width: 100%;
 	@apply drop-shadow-md;
 }
 
 .table-of-contents {
 	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: fit-content;
 }
 
 .table-of-contents a {
@@ -259,9 +274,18 @@ a {
 	@apply drop-shadow-md;
 }
 
-@media (min-width: 1024px) {
+.sidebar-image {
+	max-height: 15rem;
+	aspect-ratio: 1 / 1;
+}
+
+@media (min-width: 1400px) {
 	h1, h2, h3, h4, h5, h6 {
 		text-align: left;
+	}
+
+	.page {
+		@apply flex-row;
 	}
 
 	.heading-banner {
@@ -280,7 +304,11 @@ a {
 		padding: 0.5rem;
 	}
 
-	.page > .sidebar .sidebar-image {
+	.page>.sidebar .sidebar-image {
 		max-width: 200px;
-	}	
+	}
+
+	.info-wrapper {
+		text-align: left;
+	}
 }
