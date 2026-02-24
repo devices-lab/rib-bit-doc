@@ -2,7 +2,11 @@
 layout: "devices-lab/default"
 title: "The Rib:bit Research Platform - Powering the Rib:bit"
 image: "/img/tile.png"
-description: "The Rib:bit is a research platform extension for the Micro:bit"
+description: "Options for powering your Rib:bit"
 ---
 
-Content here
+# Powering your rib:bit
+
+## AA Batteries
+
+## The JST Connector
