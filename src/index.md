@@ -9,18 +9,6 @@ chapters:
     - advanced.md
 ---
 
-<pre>
-{{ docPages | dump(2) }}
-</pre>
-
-<pre>
-{{ page | dump(2) }}
-</pre>
-
-<pre>
-{{ pageUrlMap | dump(2) }}
-</pre>
-
 # Overview
 
 <figure>
