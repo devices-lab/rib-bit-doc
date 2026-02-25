@@ -11,8 +11,6 @@ chapters:
 
 > This documentation is still evolving, and some details may be changed in later releases.
 
-# Overview
-
 The rib:bit (AKA Research Innovation Badge) is a leap forward in research technology. It provides a ribbiting opportunity to democratise research by enabling data collection in 'real-world' environments, outside traditional laboratory settings. Anyone can hop into the role of research maker by inserting their micro:bit into the rib:bit and taking advantage of addition features including: real time data logging, location monitoring, and high amounts of data storage on SD cards.
 
 <figure>
@@ -22,7 +20,7 @@ The rib:bit (AKA Research Innovation Badge) is a leap forward in research techno
 
 The badge is battery powered, meaning it can collect data in different habitats. rib:bit is luminescent and colour changing, containing 6 buttons and lights that are programmable. At the heart of the rib:bit is the capability to connect a sensor of your choice via the mikroBUS™ port, allowing it to metamorphose into a versatile tool that can answer many research questions.
 
-## Wearing The Rib:bit
+# Wearing The Rib:bit
 
 <figure class="small left">
     <img src="img/line/Slide2.png" alt="The lanyard clip mounting holes on the Rib:bit" />
@@ -31,14 +29,14 @@ The badge is battery powered, meaning it can collect data in different habitats.
 
 While its fine to leave the Rib:bit on the desk, where it really shines is when body-worn on a lanyard. To support this we have added two oversize lanyard mounting holes which should handle most types of lanyard clip.
 
-## Powering your rib:bit
+# Powering your rib:bit
 
 <figure class="small left">
     <img src="img/line/Slide4.png" alt="Buttons and LEDs" />
     <caption>Caption Test</caption>
 </figure>
 
-There are three ways to power the Rib:bit
+There are three ways to power the Rib:bit:
 
 1. Through the Micro:bit USB connection
 2. From AA batteries
@@ -48,7 +46,10 @@ The AA batteries and JST connector are mutually exclusive, and as such cannot be
 
 <img class="inline" src="img/jst.png" alt="The JST connector under the right-hand AA battery holder" />
 
-## Buttons and LEDs
+You can plug the Micro:bit in to USB while powering the board on a battery, so you can develop your programs without having to plug or unplug the device.
+
+
+# Buttons and LEDs
 
 <figure class="small right">
     <img src="img/line/Slide10.png" alt="Buttons and LEDs" />
@@ -59,28 +60,38 @@ The Rib:bit has 6 outward-facing buttons, and 6 neopixel full-colour LEDs on its
 
 <img class="inline" src="img/blocks/button_press.png" alt="Makecode blocks demonstrating the L1 event turning the L1 LED on and set to indigo" />
 
-## Microbit Socket
+# Real Time Clock (RTC)
+
+Things can change across, months, hours or even seconds! Understand ‘when’ things happen with real time logging capabilities. Calibrate time ‘in-situ’ using GPS signals or set a custom relative time offset to suit your needs. The clock stays ticking as long as the rib:bit is powered by either the batteries, or micro:bit USB connection.
+
+# Microbit Socket
 
 <figure class="small left">
     <img src="img/line/Slide11.png" alt="The Micro:bit port on the Rib:bit" />
     <caption>The standard Micro:bit port on the Rib:bit.</caption>
 </figure>
 
-## MikroBUS Port
+# MikroBUS Port
 
 <figure class="small right">
     <img src="img/line/Slide12.png" alt="The mikroBUS port on the front of the Rib:bit" />
     <caption>The mikroBUS™ port on the Rib:bit is fully featured, including 3v3 and 5v0 power!</caption>
 </figure>
 
-## Long Range (LoRa) Radio
+The [mikroBUS™](https://www.mikroe.com/mikrobus) socket adds huge versatility to rib:bit and allows for reuse across many different projects.  Simply plug in a [compatible click-board from an ever-expanding library](https://www.mikroe.com/click) and use the make-code extension to pull in data.  Having a modular device with expansion capabilities allows for blue-sky research ideas to come a reality. 
+
+# Long Range (LoRa) Radio
 
 <figure class="small left">
-    <img src="img/line/Slide6.png" alt="" />
-    <caption>Caption Test</caption>
+    <img src="img/line/Slide6.png" alt="The back of the Rib:bit, highlighting the LoRa radio module" />
+    <caption>The HopeRF RFM96W module supports EU/UK 868Mhz, other markets should check their radio regulations</caption>
 </figure>
 
-## GPS Location Module
+The Rib:bit features a [LoRa™ long-range 868Mhz packet radio](https://www.hoperf.com/modules/lora/RFM96W.html) for when being able to roam far from your desk is paramount. With achievable ranges in the kilometer, this gives the Rib:bit truly metro-scale networking potential.
+
+The included on-board chip antenna ensures that you have solid signal anywhere you take the Rib:bit, but we also include footprints for a u.FL connection to external antennas.
+
+# GPS Location Module
 
 <figure class="small right">
     <img src="img/line/Slide7.png" alt="" />
@@ -89,16 +100,15 @@ The Rib:bit has 6 outward-facing buttons, and 6 neopixel full-colour LEDs on its
 
 Explore ‘where’ things are happening with the GPS Location module. For example, are people more active in urban or rural settings? You can also learn about different environments, by logging how sensor values change from place to place. Some environments might be noisy, whilst others quiet. 
 
-## Micro SD Card
+# Micro SD Card
 
-<figure class="small">
+<figure class="small left">
     <img src="img/line/Slide3.png" alt="" />
     <caption>Caption Test</caption>
 </figure>
 
-microSD cards provide a compact way to collect and store data over long periods of time, or at high resolutions. Want to collect sensor information several times a second, across several hours? You are no longer limited to the flash memory available in the micro:bit! You can explore the data you have selected by placing the microSD card into a microSD port that is connected to your computer. 
+The uSD port is what makes the rib:bit a data collection power house! microSD cards provide a compact way to collect and store data over long periods of time, or at high resolutions. Want to collect sensor information several times a second, across several hours? You are no longer limited to the flash memory available in the micro:bit! You can explore the data you have selected by placing the microSD card into a microSD port that is connected to your computer. 
 
-<img class="inline" style="margin-left: auto !important; margin-right: auto !important;" src="img/sdled.png" alt="The micro-SD activity LED" />
+<img class="inline" style="float: " src="img/sdled.png" alt="The micro-SD activity LED" />
 
-On the underside near the bottom is a single additional red LED which indicates that the micro-SD card is being accessed. Removing the micro-SD card while this LED is lit can cause loss or corruption of the data on the card, so try to power down the Rib:bit or ensure that your code has a mode where no writes are taking place to allow safe removal.
-
+On the underside near the bottom is a single red LED which indicates that the micro-SD card is being accessed. Removing the micro-SD card while this LED is lit can cause loss or corruption of the data on the card, so try to power down the Rib:bit or ensure that your code has a mode where no writes are taking place to allow safe removal.
