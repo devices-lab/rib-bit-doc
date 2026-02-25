@@ -11,34 +11,72 @@ chapters:
 
 # Overview
 
+The rib:bit (AKA Research Innovation Badge) is a leap forward in research technology. It provides a ribbiting opportunity to democratise research by enabling data collection in 'real-world' environments, outside traditional laboratory settings. Anyone can hop into the role of research maker by inserting their micro:bit into the rib:bit and taking advantage of addition features including: real time data logging, location monitoring, and high amounts of data storage on SD cards.
+
 <figure>
     <img src="img/main.png" alt="A photograph of the rib:bit" />
 </figure>
 
+The badge is battery powered, meaning it can collect data in different habitats. rib:bit is luminescent and colour changing, containing 6 buttons and lights that are programmable. At the heart of the rib:bit is the capability to connect a sensor of your choice via the mikroBUS™ port, allowing it to metamorphose into a versatile tool that can answer many research questions.
+
+## Wearing The Rib:bit
+
+<figure class="small left">
+    <img src="img/line/Slide2.png" alt="The lanyard clip mounting holes on the Rib:bit" />
+    <caption>The Rib:bit has two large mounting holes through which most types of lanyard clip can be attached.</caption>
+</figure>
+
+While its fine to leave the Rib:bit on the desk, where it really shines is when body-worn on a lanyard. To support this we have added two oversize lanyard mounting holes which should handle most types of lanyard clip.
+
 ## Buttons and LEDs
 
-<figure>
-    <img src="img/line-layout-buttons-leds.png" alt="The rib:bit component diagram" />
+<figure class="small right">
+    <img src="img/line/Slide10.png" alt="Buttons and LEDs" />
+    <caption>Caption Test</caption>
 </figure>
 
 The Rib:bit has 6 outward-facing buttons, and 6 neopixel full-colour LEDs on its front side, arranged along the lower left and right sides. These are named L1, L2, and L3 on the left side, and correspondingly R1, R2 and R3 on the right.
 
-<figure>
-    <img src="img/line-layout-rear-led.png" alt="The rib:bit component diagram" />
-</figure>
-
-On the underside near the bottom is a single additional red LED which indicates that the micro-SD card is being accessed. Removing the micro-SD card while this LED is lit can cause loss or corruption of the data on the card, so try to power down the Rib:bit or ensure that your code has a mode where no writes are taking place to allow safe removal.
+<img class="inline" src="img/blocks/button_press.png" alt="Makecode blocks demonstrating the L1 event turning the L1 LED on and set to indigo" />
 
 ## Microbit Socket
 
+<figure class="small left">
+    <img src="img/line/Slide11.png" alt="The Micro:bit port on the Rib:bit" />
+    <caption>The standard Micro:bit port on the Rib:bit.</caption>
+</figure>
 
 ## MikroBUS Port
 
+<figure class="small right">
+    <img src="img/line/Slide12.png" alt="The mikroBUS port on the front of the Rib:bit" />
+    <caption>The mikroBUS™ port on the Rib:bit is fully featured, including 3v3 and 5v0 power!</caption>
+</figure>
 
 ## Long Range (LoRa) Radio
 
+<figure class="small left">
+    <img src="img/line/Slide6.png" alt="" />
+    <caption>Caption Test</caption>
+</figure>
 
 ## GPS Location Module
 
+<figure class="small right">
+    <img src="img/line/Slide7.png" alt="" />
+    <caption>Caption Test</caption>
+</figure>
 
 ## Micro SD Card
+
+<figure class="small">
+    <img src="img/line/Slide3.png" alt="" />
+    <caption>Caption Test</caption>
+</figure>
+
+<figure class="small">
+    <img src="img/line/Slide1.png" alt="" />
+    <caption>Caption Test</caption>
+</figure>
+
+On the underside near the bottom is a single additional red LED which indicates that the micro-SD card is being accessed. Removing the micro-SD card while this LED is lit can cause loss or corruption of the data on the card, so try to power down the Rib:bit or ensure that your code has a mode where no writes are taking place to allow safe removal.

@@ -15,12 +15,12 @@ h1, h2, h3, h4, h5, h6 {
 	padding-bottom: 0.5rem;
 	text-align: center;
 }
-h1 { font-size: 2.25rem; }
-h2 { font-size: 1.875rem; }
-h3 { font-size: 1.5rem; }
-h4 { font-size: 1.25rem; }
-h5 { font-size: 1.125rem; }
-h6 { font-size: 1rem; }
+h1 { font-size: 2.25rem; clear: both; }
+h2 { font-size: 1.875rem; clear: both; }
+h3 { font-size: 1.5rem; clear: both;}
+h4 { font-size: 1.25rem; clear: both;}
+h5 { font-size: 1.125rem; clear: both;}
+h6 { font-size: 1rem; clear: both;}
 
 body {
 	background: 0px 0px / 20px 20px radial-gradient(#afafaf 0.5px,var(--secondary-bg-color) 1px);
@@ -161,6 +161,19 @@ a {
 	border-radius: var(--box-corner-radius);
 }
 
+.content img.inline {
+	max-width: 60%;
+	border-radius: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media (min-width: 1400px) {
+	.content img.inline {
+		max-width: 16rem;
+	}
+}
+
 .content figure {
 	margin: 0;
 	margin-top: 1.5rem;
@@ -176,6 +189,22 @@ a {
 	margin-left: auto;
 	margin-right: auto;
 	@apply drop-shadow-md;
+}
+
+@media (min-width: 1400px) {
+	.content figure.small {
+		max-width: 45%;
+	}
+
+	.content figure.left {
+		float: left;
+		margin-right: 1rem;
+	}
+
+	.content figure.right {
+		float: right;
+		margin-left: 1rem;
+	}
 }
 
 .content pre {
