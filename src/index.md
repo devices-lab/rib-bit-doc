@@ -31,7 +31,7 @@ Powered by the excellent Micro:bit, the Rib:bit gives you the power to do what y
 
 # Wearing The Rib:bit
 
-<figure class="small left">
+<figure class="small right">
     <img src="img/line/Slide2.png" alt="The lanyard clip mounting holes on the Rib:bit" />
     <caption>The Rib:bit has two large mounting holes through which most types of lanyard clip can be attached.</caption>
 </figure>
