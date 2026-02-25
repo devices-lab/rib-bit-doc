@@ -34,4 +34,10 @@
     --sidebar-bg-color: #fafafa;
 
     --code-bg-color: #f8f8f8;
+
+    --pill-bg-color: var(--color-lu-1);
+    --pill-fg-color: #ffffff;
+
+    --card-bg-color: #fafafa;
+    --card-border-color: #e0e0e0;
 }

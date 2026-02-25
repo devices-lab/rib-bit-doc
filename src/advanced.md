@@ -1,7 +1,7 @@
 ---
 layout: "devices-lab/default"
-title: "The Rib:bit Research Platform - Advanced Use"
-image: "/img/tile.png"
+title: "Advanced Use"
+image: "img/tile.png"
 description: "Advanced use of the Rib:bit research platform"
 ---
 

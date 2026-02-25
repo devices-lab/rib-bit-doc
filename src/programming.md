@@ -1,7 +1,7 @@
 ---
 layout: "devices-lab/default"
-title: "The Rib:bit Research Platform - Programming the Rib:bit"
-image: "/img/tile.png"
+title: "Programming the Rib:bit"
+image: "img/tile.png"
 description: "How to program your Rib:bit"
 ---
 

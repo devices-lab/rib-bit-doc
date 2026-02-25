@@ -1,7 +1,7 @@
 ---
 layout: "devices-lab/default"
-title: "The Rib:bit Research Platform - Powering the Rib:bit"
-image: "/img/tile.png"
+title: "Powering the Rib:bit"
+image: "img/tile.png"
 description: "Options for powering your Rib:bit"
 ---
 

@@ -1,13 +1,25 @@
 ---
 layout: "devices-lab/default"
 title: "The Rib:bit Research Platform"
-image: "/img/tile.png"
+image: "img/tile.png"
 description: "The Rib:bit is a research platform extension for the Micro:bit"
 chapters:
     - powering.md
     - programming.md
     - advanced.md
 ---
+
+<pre>
+{{ docPages | dump(2) }}
+</pre>
+
+<pre>
+{{ page | dump(2) }}
+</pre>
+
+<pre>
+{{ pageUrlMap | dump(2) }}
+</pre>
 
 # Overview
 

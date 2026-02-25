@@ -75,6 +75,7 @@ a {
 
 .page {
 	padding: 0.5rem;
+	width: 100%;
 	@apply flex;
 	@apply flex-col;
 	@apply gap-2;
@@ -83,10 +84,11 @@ a {
 
 .page > .content {
 	@apply flex-1;
-	padding-left: 1.5rem;
-	padding-right: 1.5rem;
-	padding-bottom: 1.5rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-bottom: 1rem;
 	padding-top: 0.5rem;
+	width: 100%;
 	max-width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
@@ -240,7 +242,55 @@ a {
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
-	width: fit-content;
+}
+
+.table-of-contents::before {
+	content: '☰ Contents';
+	display: none;
+	cursor: pointer;
+	font-weight: 600;
+	padding: 0.75rem;
+	background-color: var(--card-bg-color);
+	border: 1px solid var(--card-border-color);
+	border-radius: var(--box-corner-radius);
+	user-select: none;
+	margin-bottom: 0.5rem;
+}
+
+.table-of-contents.collapsed ol {
+	display: none;
+}
+
+.table-of-contents.collapsed::before {
+	content: '▶ Contents';
+}
+
+.table-of-contents.expanded::before {
+	content: '▼ Contents';
+}
+
+@media (min-width: 1400px) {
+	.table-of-contents::before {
+		display: none !important;
+	}
+
+	.table-of-contents ol {
+		display: block !important;
+	}
+}
+
+@media (max-width: 1399px) {
+	.table-of-contents::before {
+		display: block;
+	}
+
+	.table-of-contents ol {
+		display: none;
+	}
+
+	.table-of-contents.expanded ol {
+		display: block;
+	}
 }
 
 .table-of-contents a {
@@ -265,7 +315,7 @@ a {
 	left: 0;
 	top: 0;
 	bottom: 0;
-	width: 3px; /* Adjust the width as needed */
+	max-width: 3px; /* Adjust the width as needed */
 	background-color: black; /* Change color as needed */
 }
 
@@ -277,6 +327,24 @@ a {
 .sidebar-image {
 	max-height: 15rem;
 	aspect-ratio: 1 / 1;
+}
+
+.pill {
+	display: inline-block;
+	padding: 0.25rem 0.75rem;
+	border-radius: 9999px;
+	background-color: var(--pill-bg-color);
+	color: var(--pill-fg-color);
+	font-size: 0.75rem;
+	font-weight: 500;
+}
+
+.card {
+	border: 1px solid var(--card-border-color);
+	border-radius: var(--box-corner-radius);
+	padding: 1rem;
+	background-color: var(--card-bg-color);
+	@apply drop-shadow-md;
 }
 
 @media (min-width: 1400px) {
@@ -300,7 +368,7 @@ a {
 
 	.page > .sidebar {
 		display: block;
-		width: 20rem;
+		max-width: 20rem;
 		padding: 0.5rem;
 	}
 
@@ -310,5 +378,19 @@ a {
 
 	.info-wrapper {
 		text-align: left;
+	}
+}
+
+@media (max-width: 1400px) {
+	.table-of-contents::before {
+		display: block;
+	}
+
+	.table-of-contents ol {
+		display: none;
+	}
+
+	.table-of-contents.expanded ol {
+		display: block;
 	}
 }
