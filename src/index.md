@@ -20,6 +20,15 @@ The rib:bit (AKA Research Innovation Badge) is a leap forward in research techno
 
 The badge is battery powered, meaning it can collect data in different habitats. rib:bit is luminescent and colour changing, containing 6 buttons and lights that are programmable. At the heart of the rib:bit is the capability to connect a sensor of your choice via the mikroBUS™ port, allowing it to metamorphose into a versatile tool that can answer many research questions.
 
+# Powered By Micro:bit
+
+<figure class="small left">
+    <img src="img/line/Slide11.png" alt="The Micro:bit port on the Rib:bit" />
+    <caption>The standard Micro:bit port on the Rib:bit.</caption>
+</figure>
+
+Powered by the excellent Micro:bit, the Rib:bit gives you the power to do what you want without the fuss. [Microsoft Makecode](https://makecode.microbit.org/) provides the beginner and advanced user alike with the tools you need to get up and running as quickly as possible. We provide compatible extensions to quickly and easily get your ideas running.
+
 # Wearing The Rib:bit
 
 <figure class="small left">
@@ -63,13 +72,6 @@ The Rib:bit has 6 outward-facing buttons, and 6 neopixel full-colour LEDs on its
 # Real Time Clock (RTC)
 
 Things can change across, months, hours or even seconds! Understand ‘when’ things happen with real time logging capabilities. Calibrate time ‘in-situ’ using GPS signals or set a custom relative time offset to suit your needs. The clock stays ticking as long as the rib:bit is powered by either the batteries, or micro:bit USB connection.
-
-# Microbit Socket
-
-<figure class="small left">
-    <img src="img/line/Slide11.png" alt="The Micro:bit port on the Rib:bit" />
-    <caption>The standard Micro:bit port on the Rib:bit.</caption>
-</figure>
 
 # MikroBUS Port
 
