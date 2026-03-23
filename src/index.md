@@ -39,11 +39,11 @@ Powered by the excellent Micro:bit, the Rib:bit gives you the power to do what y
 
 While its fine to leave the Rib:bit on the desk, where it really shines is when body-worn on a lanyard. To support this we have added two oversize lanyard mounting holes which should handle most types of lanyard clip.
 
-# Powering your rib:bit
+# Powering your Rib:bit
 
 <figure class="small left">
     <img src={{ "/img/line/Slide4.png" | url }} alt="Buttons and LEDs" />
-    <caption>Caption Test</caption>
+    <caption>The two AA cell holders also help keep the Rib:bit the right way up and in the right place</caption>
 </figure>
 
 There are three ways to power the Rib:bit:
