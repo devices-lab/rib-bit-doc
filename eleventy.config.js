@@ -1,6 +1,5 @@
 import userDocBase from "@devices-lab/user-doc-base";
 import docToc from "@johnvidler/11ty-doc-toc";
-import path from "node:path";
 
 export default async function(eleventyConfig, options = {}) {
     const inputDir = options.inputDir || "src";

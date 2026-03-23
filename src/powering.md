@@ -5,8 +5,6 @@ image: "img/tile.png"
 description: "Options for powering your Rib:bit"
 ---
 
-# Powering your rib:bit
+# AA Batteries
 
-## AA Batteries
-
-## The JST Connector
+# The JST Connector
